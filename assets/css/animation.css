@@ -1,0 +1,53 @@
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-110%);
+    }
+}
+
+@keyframes mover__para__baixo {
+    30% {
+        transform: translateY(50px);
+    }
+
+    0% {
+        transform: translateY(0);
+    }
+}
+
+.carrossel__sildes {
+    display: flex;
+    white-space: nowrap;
+    /* APLICANDO A ANIMAÇÃO */
+    animation-name: deslizar;
+    /* O nome que você definiu acima */
+    animation-duration: 30s;
+    /* Duração total do movimento (ex: 5 segundos) */
+    animation-timing-function: linear ease-in;
+    /* Velocidade do movimento (suave) */
+    animation-iteration-count: infinite;
+    /* Faz o movimento se repetir para sempre */
+    animation-direction: linear ease-in-out;
+    /* Faz a animação ir e voltar suavemente */
+    animation: deslizar infinite ease-in-out infinite;
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0);
+
+
+}
