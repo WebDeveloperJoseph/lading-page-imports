@@ -72,12 +72,17 @@
     }
 
     .description_image__luen,
-    .description {
+    .description,
+    .description_image__kadosh {
         display: flex;
-        /* background-color: blue; */
         width: 100%;
         text-align: center;
         margin-bottom: 5%;
+    }
+
+    .title_kadosh span {
+        font-size: 1.7em;
+        /* background-color: blue; */
     }
 
     .title_luen {
